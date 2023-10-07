@@ -1,0 +1,128 @@
+#body {
+    background:linear-gradient(50deg, crimson,sienna, royalblue, indianred, purple);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color:aliceblue;
+    text-align: center;
+}
+
+h3 {
+    color: #C5F4E0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#inicio {
+    display: block;
+    padding-top: 200px;
+    
+}
+
+h1, legend {
+    text-align: center;
+    color: beige;
+}
+
+fieldset {
+    border: none;
+    padding-bottom: 50px;
+}
+
+legend {
+    text-align: center;
+    font-size: larger;
+    font-weight:bold;
+    font-style: oblique;
+    
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    font-weight:bold;
+    background-color: #DAA588;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+label:hover{
+    background-color: #F3D9DC;
+}
+
+
+input[type="radio"]{
+    opacity: 0;
+}
+
+#ready {
+    display: flex;
+    margin: auto;
+    background-color: black;
+    border-color: white;
+    font-size: 100px;
+    color: beige;
+    padding: 40px;
+    border-radius: 10%;
+
+}
+
+#ready:hover {
+    background-color: #F3D9DC;
+    color:black;
+}
+
+#submit {
+    
+    display: flex;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20%;
+    background-color: #71090e;
+    color:beige;
+}
+
+
+
+@media (min-width:769px) {
+
+    #body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+      
+    h1, h2, h3 {
+        font-size: 30px;
+        
+    }
+
+    label {
+        margin-left: 30%;
+        margin-right: 30%;
+        
+             
+    }
+
+    fieldset {
+        column-count: 2;
+        column-gap: none;
+        column-rule: 1px solid #bbb;
+    }
+
+    legend {
+        font-size: x-large;
+    }
+}

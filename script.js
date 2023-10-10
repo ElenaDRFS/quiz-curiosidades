@@ -131,4 +131,10 @@ if(erizo !== '300'){
 
 
 
+
 });
+
+document.getElementById("reset").addEventListener("click", function(){
+    location.reload()
+});
+

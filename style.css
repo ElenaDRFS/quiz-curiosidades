@@ -65,6 +65,13 @@ input[type="radio"]{
     opacity: 0;
 }
 
+input[type="radio"]:checked + label{
+    background-color:rgb(241, 151, 41);
+}
+
+
+
+
 #ready {
     display: flex;
     margin: auto;
@@ -124,5 +131,12 @@ input[type="radio"]{
 
     legend {
         font-size: x-large;
+    }
+
+    .left {
+        margin-right: 5px;
+    }
+    .right {
+        margin-left: 5px;
     }
 }

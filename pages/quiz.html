@@ -10,171 +10,180 @@
     <main>
         <h1>Quiz curiosidades</h1>
         <h3>Bienvenido al primer quiz sobre <b>curiosidades</b>, vamos a ver cuantas eres capaz de acertar. <br> Let's go!!</h3>
-        <form action="#">
+        <form id="quiz"  action="#">
             <fieldset>
-            <legend>¿Cuál es record mundial de crías de cerdo nacidas en un solo parto? </legend>
+            <legend id="one">¿Cuál es record mundial de crías de cerdo nacidas en un solo parto? </legend>
             
-                <label for="answer1">24</label>
-                <input type="radio" id="answer1" name="cerdo" value="24">
+                <input type="radio" id="answer1" name="cerdo" value="24">    
+                <label class="left" for="answer1">24</label>
                 
-                <label for="answer2">5</label>
                 <input type="radio"  id="answer2" name="cerdo" value="5">
-
-                <label for="answer3">16</label>
-                <input type="radio"  id="answer3" name="cerdo" value="16">
-
-                <label for="answer4">32</label>
-                <input type="radio"  id="answer4" name="cerdo" value="32">
-            </fieldset>
-
-            <fieldset>
-                <legend>¿Cuál es la llave inglesa que no existe?</legend>
-
-                <label for="answer5">11/56</label>
-                <input type="radio"  id="answer5" name="llave" value="11/56">
-
-                <label for="answer6">13/14</label>
-                <input type="radio" id="answer6" name="llave" value="13/14">
-
-                <label for="answer7">56/67</label>
-                <input type="radio" id="answer7" name="llave" value="56/67">
-
-                <label for="answer8">2/3</label>
-                <input type="radio" id="answer8" name="llave" value="2/3">
-            </fieldset>
-
-            <fieldset>
-                <legend>¿Qué animal come piedras y vuela?</legend>
-
-                <label for="answer9">Äguila chueca</label>     
-                <input type="radio" id="answer9" name="animal" value="aguila">
-
-                <label for="answer10">Pájaro algur</label>
-                <input type="radio" id="answer10" name="animal" value="algur">
-
-                <label for="answer11">El come piedras volador</label>
-                <input type="radio" id="answer11" name="animal" value="comepiedras">
-
-                <label for="answer12">Ave Fénix</label>
-                <input type="radio" id="answer12" name="animal" value="fenix">
-            </fieldset>
-
-            <fieldset>
-                <legend>¿Qué le dijo Batman a Robin antes de subir al coche?</legend>
-
-                <label for="answer13">Vuelve a la batcueva</label>     
-                <input type="radio" id="answer13" name="batman" value="cueva">
-
-                <label for="answer14">Buena suerte Robin</label>
-                <input type="radio" id="answer14" name="batman" value="suerte">
-
-                <label for="answer15">Ve al KFC</label>
-                <input type="radio" id="answer15" name="batman" value="KFC">
-
-                <label for="answer16">Sube Robin</label>
-                <input type="radio" id="answer16" name="batman" value="sube">
-            </fieldset>
-
-            <fieldset>
-                <legend>En la presentación de Mario Bros, al presentar a la princesa Peach llenaron la sala de...</legend>
-
-                <label for="answer17">Melocotones</label>     
-                <input type="radio" id="answer17" name="peach" value="melocotones">
-
-                <label for="answer18">Coronas</label>
-                <input type="radio" id="answer18" name="peach" value="coronas">
-
-                <label for="answer19">Tacones</label>
-                <input type="radio" id="answer19" name="peach" value="tacones">
-
-                <label for="answer20">Pelucas rubias</label>
-                <input type="radio" id="answer20" name="peach" value="pelucas">
-            </fieldset>
-
-            <fieldset>
-                <legend>¿¿Quién quieres ser millonario?</legend>
-
-                <label for="answer21">Yo</label>     
-                <input type="radio" id="answer21" name="millonario" value="yo">
-
-                <label for="answer22">Tú</label>
-                <input type="radio" id="answer22" name="millonario" value="tu">
-
-                <label for="answer23">El tío Pepe</label>
-                <input type="radio" id="answer23" name="millonario" value="pepe">
-
-                <label for="answer24">Edgar Alan Poe</label>
-                <input type="radio" id="answer24" name="millonario" value="edgar">
-            </fieldset>
-
-            <fieldset>
-                <legend>¿En qué paises no existe la Coca-Cola?</legend>
-
-               
-                <label for="answer25">Cuba y Corea del Norte</label>     
-                <input type="radio" id="answer25" name="cocacola" value="cubacorea">
+                <label  class="left" for="answer2">5</label>
                 
+                <input type="radio"  id="answer3" name="cerdo" value="16">
+                <label  class="right"for="answer3">16</label>
+                
+                <input type="radio"  id="answer4" name="cerdo" value="36">
+                <label class="right" id="correct-one" for="answer4">36</label>
+                
+            </fieldset>
 
-                <label for="answer26">Corea del Norte y Corea del Sur</label>
+            <fieldset>
+                <legend  id="two">¿Cuál es la llave inglesa que no existe?</legend>
+
+                <input type="radio"  id="answer5" name="llave" value="11/56">
+                <label class="left" for="answer5">11/56</label>
+                
+                <input type="radio" id="answer6" name="llave" value="13/14">
+                <label class="left" id="correct-two" for="answer6">13/14</label>
+                
+                <input type="radio" id="answer7" name="llave" value="56/67">
+                <label class="right" for="answer7">56/67</label>
+                
+                <input type="radio" id="answer8" name="llave" value="2/3">
+                <label class="right" for="answer8">2/3</label>
+                
+            </fieldset>
+
+            <fieldset >
+                <legend id="three">¿Qué animal come piedras y vuela?</legend>
+
+                <input type="radio" id="answer9" name="animal" value="aguila">    
+                <label class="left" for="answer9">Äguila chueca</label>     
+                
+                <input type="radio" id="answer10" name="animal" value="algur">
+                <label class="left" for="answer10">Pájaro algur</label>
+                
+                <input type="radio" id="answer11" name="animal" value="comepiedras">
+                <label class="right" id="correct-three" for="answer11">El come piedras volador</label>
+                
+                <input type="radio" id="answer12" name="animal" value="fenix">
+                <label class="right" for="answer12">Ave Fénix</label>
+                
+            </fieldset>
+
+            <fieldset >
+                <legend id="four">¿Qué le dijo Batman a Robin antes de subir al coche?</legend>
+
+                <input type="radio" id="answer13" name="batman" value="cueva">
+                <label class="left" for="answer13">Vuelve a la batcueva</label>     
+                
+                <input type="radio" id="answer14" name="batman" value="suerte">
+                <label class="left" for="answer14">Buena suerte Robin</label>
+                
+                <input type="radio" id="answer15" name="batman" value="KFC">
+                <label class="right" for="answer15">Ve al KFC</label>
+                
+                <input type="radio" id="answer16" name="batman" value="sube">
+                <label class="right" id="correct-four" for="answer16">Sube Robin</label>
+                
+            </fieldset>
+
+            <fieldset >
+                <legend id="five">En la presentación de Mario Bros, al presentar a la princesa Peach llenaron la sala de...</legend>
+
+                <input type="radio" id="answer17" name="peach" value="melocotones">
+                <label class="left" id="correct-five" for="answer17">Melocotones</label>     
+                
+                <input type="radio" id="answer18" name="peach" value="coronas">
+                <label class="left" for="answer18">Coronas</label>
+                
+                <input type="radio" id="answer19" name="peach" value="tacones">
+                <label class="right" for="answer19">Tacones</label>
+                
+                <input type="radio" id="answer20" name="peach" value="pelucas">
+                <label class="right" for="answer20">Pelucas rubias</label>
+                
+            </fieldset>
+
+            <fieldset >
+                <legend id="six">¿Quién quieres ser millonario?</legend>
+
+                <input type="radio" id="answer21" name="millonario" value="yo">
+                <label class="left" id="correct-six" for="answer21">Yo</label>     
+                
+                <input type="radio" id="answer22" name="millonario" value="tu">
+                <label class="left" for="answer22">Tú</label>
+                
+                <input type="radio" id="answer23" name="millonario" value="pepe">
+                <label class="right" for="answer23">El tío Pepe</label>
+                
+                <input type="radio" id="answer24" name="millonario" value="edgar">
+                <label class="right" for="answer24">Edgar Alan Poe</label>
+                
+            </fieldset>
+
+            <fieldset >
+                <legend id="seven">¿En qué paises no existe la Coca-Cola?</legend>
+
+                <input type="radio" id="answer25" name="cocacola" value="cubacorea">
+                <label class="left" id="correct-seven" for="answer25">Cuba y Corea del Norte</label>     
+                
+                
                 <input type="radio" id="answer26" name="cocacola" value="corecorea">
-
-                <label for="answer27">Canadá y Hawaii</label>
+                <label class="left" for="answer26">Corea del Norte y Corea del Sur</label>
+                
                 <input type="radio" id="answer27" name="cocacola" value="canadahawai">
-
-                <label for="answer28">Rusia y Finlandia</label>
-                <input type="radio" id="answer28" name="cocacola" value="fenix">
+                <label class="right" for="answer27">Canadá y Hawaii</label>
+                
+                <input type="radio" id="answer28" name="cocacola" value="rusia">
+                <label class="right" for="answer28">Rusia y Finlandia</label>
+                
             </fieldset>
 
             <fieldset>
-                <legend>¿Qué es el Lopburi?</legend> 
+                <legend id="eight">¿Qué es el Lopburi?</legend> 
 
-                <label for="answer30">Un festival donde apreciar a los monos</label>     
                 <input type="radio" id="answer30" name="monos" value="monos">
-
-                <label for="answer31">Un festival donde apreciar a los mapaches</label>
+                <label class="left" id="correct-eight" for="answer30">Un festival donde apreciar a los monos</label>     
+                
                 <input type="radio" id="answer31" name="monos" value="mapaches">
-
-                <label for="answer32">Un festival donde apreciar a los orcas</label>
+                <label class="left" for="answer31">Un festival donde apreciar a los mapaches</label>
+                
                 <input type="radio" id="answer32" name="monos" value="orcas">
-
-                <label for="answer33">Un festival donde apreciar a los pájaros dodo</label>
+                <label class="right" for="answer32">Un festival donde apreciar a los orcas</label>
+                
                 <input type="radio" id="answer33" name="monos" value="dodo">
+                <label class="right" for="answer33">Un festival donde apreciar a los pájaros dodo</label>
+                
             </fieldset>
 
             <fieldset>
-                <legend>¿Qué es el cheese rolling?</legend>
+                <legend id="nine">¿Qué es el cheese rolling?</legend>
 
-                <label for="answer34">Un tipo de formato de queso enrollado</label>     
                 <input type="radio" id="answer34" name="queso" value="tipo">
-
-                <label for="answer35">Una carrera donde se persigue un queso colina abajo</label>
+                <label class="left" for="answer34">Un tipo de formato de queso enrollado</label>     
+                
                 <input type="radio" id="answer35" name="queso" value="carrera">
-
-                <label for="answer36">Un footruck</label>
+                <label class="left" id="correct-nine" for="answer35">Una carrera donde se persigue un queso colina abajo</label>
+                
                 <input type="radio" id="answer36" name="queso" value="coche">
-
-                <label for="answer37">Un plato de comida hecho solo de queso</label>
+                <label class="right" for="answer36">Un footruck</label>
+                
                 <input type="radio" id="answer37" name="queso" value="comida">
+                <label class="right" for="answer37">Un plato de comida hecho solo de queso</label>
+                
             </fieldset>
 
-            <fieldset>
-                <legend>¿Cuántas veces late por minuto el corazón de un erizo?</legend>
+            <fieldset >
+                <legend id="ten">¿Cuántas veces late por minuto el corazón de un erizo?</legend>
 
-                <label for="answer38">300</label>     
                 <input type="radio" id="answer38" name="erizo" value="300">
-
-                <label for="answer39">456</label>
+                <label class="left" id="correct-ten" for="answer38">300</label>     
+                
                 <input type="radio" id="answer39" name="erizo" value="456">
-
-                <label for="answer40">2345</label>
+                <label class="left" for="answer39">456</label>
+                
                 <input type="radio" id="answer40" name="erizo" value="2345">
-
-                <label for="answer41">666</label>
+                <label class="right" for="answer40">2345</label>
+                
                 <input type="radio" id="answer41" name="erizo" value="666">
+                <label class="right" for="answer41">666</label>
+                
             </fieldset>
 
 
-            <button id="submit" type="submit">Quiero probar suerte</button>
+        <button id="submit" type="submit">Quiero probar suerte</button>
         </form>
 
 

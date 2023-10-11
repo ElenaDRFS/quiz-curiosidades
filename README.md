@@ -10,11 +10,14 @@ En este repositorio encontarás un quiz o concurso con  el que aprender nuevos d
 Tendrás que responder a todas las preguntas y luego clicar el botón de "quiero probar suerte". Si has acertado, el título de la pregunta se pondrá en verde y si está mal en rojo, y de paso, te marcará en verde la que era la correcta. 
 
 
+Aquí tienes el enlace para jugar! https://elenadrfs.github.io/quiz-curiosidades/ 
+
 ## Objetivo ##
 ---
 
 EL objetivo de este fichero es demostrar la mejora y aprendizajes habidos en el Bootcamp de programaación que curso actualmente en The Bridge. 
 Por parte del usuario o jugador el objetivo es acertar las máximas respuestas posibles. 
+
 
 ## Desglose ##
 ---
